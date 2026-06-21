@@ -24,4 +24,5 @@ def get_int(prompt):
             # return x 
 
  
-main()
+if __name__=="__main__":
+    main()

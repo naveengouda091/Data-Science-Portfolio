@@ -36,8 +36,8 @@ def main():
 def hello(to="world"):
      print(f"Hello, {to}!")
 
-main()
-hello()
+if __name__=="__main__":
+    main()
 
 
 

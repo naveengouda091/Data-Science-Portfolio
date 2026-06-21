@@ -11,4 +11,5 @@ def is_even(n):
     else:
         return False
 
-main()
+if __name__=="__main__":
+    main()

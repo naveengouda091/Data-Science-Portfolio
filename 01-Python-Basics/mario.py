@@ -21,5 +21,6 @@ def print_square(size):
             print("#", end="")
         print()  # Print a newline after each row
 
-main()
+if __name__=="__main__":
+    main()
 

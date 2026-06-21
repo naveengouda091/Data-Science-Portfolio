@@ -56,4 +56,5 @@ def meow(n):
     for _ in range(n):
         print(f"meow {_+1}")
 
-main()
+if __name__=="__main__":
+    main()
