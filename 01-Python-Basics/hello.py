@@ -34,7 +34,7 @@ def main():
      hello(name)
 
 def hello(to="world"):
-     print("Hello,",to)
+     print(f"Hello, {to}!")
 
 main()
 hello()
