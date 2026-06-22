@@ -1,3 +1,4 @@
+import pytest
 from calculator import sqr
 
 #def main():
@@ -41,22 +42,27 @@ def test_sqr():
         print("0 squeried was not 0")
 
 '''
-
+'''
 def test_sqr():
     for i in range(-5,5):
         try:
             assert sqr(i) == i**2
         except AssertionError:
             print(f"{i} squaried was not {i**2}")
-
 '''
+
+
 
 def test_sqr():
     assert sqr(2) == 4
     assert sqr(3) == 9
     assert sqr(-2) == 4
     assert sqr(-3) == 9
-'''
+
+def test_str():
+    with pytest.raises(TypeError):
+        sqr("cat")
+
 
 #if __name__=="__main__":
     #main()
