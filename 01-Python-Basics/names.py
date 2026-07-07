@@ -93,6 +93,11 @@ import csv
 name=input("what's your name: ")
 home=input("what's your home: ")
 
-with open("names.csv","a") as file:
-    writer=csv.writer(file)
-    writer.writerow([name,home])
+# with open("names.csv","a") as file:
+#     writer=csv.writer(file)
+#     writer.writerow([name,home])
+
+with open("names.csv", "a") as file:
+    writer = csv.DictWriter(file, fieldnames=["name", "home"])
+    writer.writerow({"name": name, "home": home})
+
