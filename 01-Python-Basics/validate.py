@@ -9,7 +9,9 @@ email = input("What's your email? ").strip()
 #     print("Invalid")
 
 
-
+# if "@" in email and "." in email:
+#     print("Valid")
+# else:
 
 
 # username, domain = email.split("@")

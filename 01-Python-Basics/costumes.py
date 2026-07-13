@@ -7,6 +7,8 @@ for arg in sys.argv[1:]:
     image=Image.open(arg)
     images.append(image)
 
+
+
 images[0].save(
     "costume.gif",
     save_all=True,
