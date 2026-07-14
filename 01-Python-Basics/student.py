@@ -6,6 +6,20 @@ class Student:
         self.house = house
 
 
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+
+    def charm(self):
+        match self.house:
+            case "Gryffindor":
+                return "bravery"
+            case "Hufflepuff":
+                return "loyalty"
+            case "Ravenclaw":
+                return "devotion"
+
+
 
 # def main():
 
@@ -25,7 +39,11 @@ class Student:
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
+    print("is known for their", student.charm())
+   
+
+
 
 
 def get_student():
