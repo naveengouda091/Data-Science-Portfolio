@@ -1,4 +1,14 @@
+class Student:
+    def __init__(self, name, house):
+        if not name:
+            raise ValueError("Missing name")
+        self.name = name
+        self.house = house
+
+
+
 # def main():
+
 #     student = get_student()
 #     print(f"{student[0]} from {student[1]}")
 
@@ -15,14 +25,27 @@
 
 def main():
     student = get_student()
-    print(f"{student['name']} from {student['house']}")
+    print(f"{student.name} from {student.house}")
 
 
 def get_student():
-    student = {}
-    student["name"] = input("name: ")
-    student["house"] = input("house: ")
-    return student
+    # student = {}
+    # student["name"] = input("name: ")
+    # student["house"] = input("house: ")
+    # return student
+
+
+    # student = Student()
+    # student.name = input("name: ")
+    # student.house = input("house: ")
+    # return student
+
+    name = input("name: ")
+    house = input("house: ")
+    return Student(name, house)
+    
+
+
 
 
 if __name__ == "__main__":
