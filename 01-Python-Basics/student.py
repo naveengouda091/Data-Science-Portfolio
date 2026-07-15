@@ -18,6 +18,21 @@ class Student:
                 return "loyalty"
             case "Ravenclaw":
                 return "devotion"
+    @property     
+    def house(self):
+        return self.house
+
+
+
+
+        
+    
+
+    @house.setter
+    def house(self, house):
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
+        self.house = house
 
 
 
