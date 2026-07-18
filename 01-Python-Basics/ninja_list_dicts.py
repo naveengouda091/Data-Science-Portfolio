@@ -38,6 +38,10 @@ ninja=[
 ]
 
 
+
+
+
+#
 # print(ninja["naruto"])
 for ninjas in ninja:
     print(ninjas["name"], ninjas["village"], ninjas["CN"],sep=": ")
