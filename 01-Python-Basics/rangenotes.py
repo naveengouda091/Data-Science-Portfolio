@@ -22,6 +22,74 @@ following examples demos loops with differ parameters
 #     print(y)
 
 
-for i in range(0,11,2):
-    # if (i%2==0):
-     print(i)
+# for i in range(0,11,2):
+#     # if (i%2==0):
+#      print(i)
+
+
+# num  = int(input("enter a number"))
+# for i in range(1,num):
+#     print(i*i)
+
+
+# for i in range(50):
+#     if (i%3==i%5):
+#         print(f"{i}. hi hello ")
+
+
+#     elif (i%3==0):
+#         print(f"{i}. hi")
+
+#     elif (i%5==0):
+#         print(f"{i}. hello")
+
+#     else :
+#         print(f"{i}. not divisible by 3 or 5")
+
+    
+
+
+
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i,j,end=" ")
+#     print("\n")
+
+# write a program to display the following patterns
+
+"""
+1.
+*
+* * 
+* * *
+
+2.
+1
+1 2
+1 2 3
+
+3.
+1
+2 2
+3 3 3
+
+4.
+1
+2 3
+4 5 6
+
+5.
+*
+* *
+* * *
+* *
+*
+
+"""
+
+
+
+
+
+
+
