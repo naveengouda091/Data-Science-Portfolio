@@ -88,6 +88,56 @@ following examples demos loops with differ parameters
 """
 
 
+# Pattern 1
+for row in range(1, 4):
+	for column in range(row):
+		print("*", end=" ")
+	print()
+
+print()
+
+
+# Pattern 2
+for row in range(1, 4):
+	for number in range(1, row + 1):
+		print(number, end=" ")
+	print()
+
+print()
+
+
+# Pattern 3
+for row in range(1, 4):
+	for column in range(row):
+		print(row, end=" ")
+	print()
+
+print()
+
+
+# Pattern 4
+number = 1
+for row in range(1, 4):
+	for column in range(row):
+		print(number, end=" ")
+		number = number + 1
+	print()
+
+print()
+
+
+# Pattern 5
+for row in range(1, 4):
+	for column in range(row):
+		print("*", end=" ")
+	print()
+
+for row in range(2, 0, -1):
+	for column in range(row):
+		print("*", end=" ")
+	print()
+
+
 
 
 

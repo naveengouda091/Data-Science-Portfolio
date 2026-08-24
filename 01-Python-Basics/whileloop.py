@@ -40,11 +40,62 @@ write a prgm to read a number an check is it a armstrong number
 '''
 
 
-temp=0
-sum=0
-num=int(input("enter a number"))
-while(num>0):
-    temp=num%10
-    sum=sum+temp
-    num=num/10
-print(sum)
+
+
+
+temp = 0
+digit_sum = 0
+num = int(input("Enter a number: "))
+while num > 0:
+    temp = num % 10
+    digit_sum = digit_sum + temp
+    num = num // 10
+print("Sum of digits:", digit_sum)
+
+
+# Reverse a number
+num = int(input("Enter a number to reverse: "))
+original = num
+reverse = 0
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+print("Reverse:", reverse)
+
+
+# Check whether a number is a palindrome
+num = int(input("Enter a number to check for palindrome: "))
+original = num
+reverse = 0
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+if original == reverse:
+    print("Palindrome number")
+else:
+    print("Not a palindrome number")
+
+
+# Check whether a number is an Armstrong number
+num = int(input("Enter a number to check for Armstrong: "))
+original = num
+digits = 0
+temp = num
+while temp > 0:
+    digits = digits + 1
+    temp = temp // 10
+
+armstrong_sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    armstrong_sum = armstrong_sum + digit ** digits
+    temp = temp // 10
+
+if original == armstrong_sum:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
